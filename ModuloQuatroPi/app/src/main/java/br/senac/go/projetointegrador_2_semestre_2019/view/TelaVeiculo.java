@@ -35,7 +35,7 @@ public class TelaVeiculo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTitle("Veiculos");
 
-       /* FloatingActionButton fab = findViewById(R.id.float_bnt);
+       FloatingActionButton fab = findViewById(R.id.float_bnt);
         fab.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), TelaCadastrarVeiculo.class);
@@ -43,7 +43,7 @@ public class TelaVeiculo extends AppCompatActivity {
 
             }
         });
-*/
+
         setContentView(R.layout.activity_tela_veiculo);
         ApiSource service = GerenciadorApi.getRetrofitInstance().create(ApiSource.class);
         Call<List<Veiculos>> call = service.getVeiculos();

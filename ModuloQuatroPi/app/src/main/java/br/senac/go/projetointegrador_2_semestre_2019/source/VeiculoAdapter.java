@@ -31,7 +31,7 @@ public class VeiculoAdapter extends RecyclerView.Adapter<VeiculoAdapter.VeiculoV
                 super(itemView);
                 myView = itemView;
 
-                textVeiculo = myView.findViewById(R.id.tx_veiculo);
+                textVeiculo = myView.findViewById(R.id.tx_data);
 
             }
         }
